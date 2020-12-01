@@ -1,0 +1,132 @@
+@import variables
+@import mixins
+@import typography
+@import universal
+@import nav
+@import layout
+@import components
+@import footer
+@import tilbakemeldinger
+
+#hero
+    background-image: url("images/øgle.png")
+    background-repeat: no-repeat
+    background-size: 1400px
+    background-position-y: -60px
+    background-position-x: 150px
+    height: 50vh
+
+ 
+main a
+    color: black
+    text-decoration: none
+    padding: 2rem 3rem
+    border-radius: 10px
+    font-weight: 700
+    background: $accent
+
+    &:hover, &:focuswhite
+        background-color: white
+        transition: 0.3s
+
+
+#bekjempere
+    margin: 8rem auto
+
+    h2
+        margin: 0 0 4rem
+
+.container
+    @extend %flex
+    margin: 1rem 0 3rem
+
+
+.bilde, .dyr__tekst
+    display: flex
+    flex-direction: column
+    width: 50%
+    justify-content: flex-start
+    align-items: flex-start
+    margin: 3rem 0
+
+.dyr__tekst
+    display: flex
+    align-items: flex-start
+    margin: 0
+
+    p, li
+        padding: 0 2rem 0 0
+
+    h3
+        padding: 0
+        margin: 2.5rem 0 0
+
+.bilde  
+    align-items: flex-start
+
+    img 
+        width: 90%
+        object-fit: cover
+
+        
+
+        
+
+#selskapet
+    background: $primary
+    padding: 2rem 0
+    
+
+    h2, p
+        color: white
+
+    a
+        margin: 2rem 0
+
+
+    p
+        padding: 0 4rem 0 0
+
+
+.selskapet__container
+    display: flex
+    @extend %max-width
+    padding: 1rem 0 5rem
+
+.selskapet__left__col
+    @extend %flex1
+    padding: 0 1rem
+    
+    p:nth-child(3)
+        margin: 0 0 4rem
+
+    h2
+        font-size: 3.6rem
+
+.selskapet__right__col
+    @extend %flex1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: 1.5rem 0 0
+
+#bekjempere
+    @extend %max-width
+
+    h2  
+        text-align: center
+
+#ansatte
+    @extend %max-width
+    margin: 6rem auto
+
+    h2  
+        text-align: center
+
+    .container
+        margin: 6rem 0
+
+.ansatte__tekst
+    p
+        padding: 0 3rem 0 0
+

@@ -1,0 +1,377 @@
+@charset "UTF-8";
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.selskapet__left__col, .selskapet__right__col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.CTA__content, .selskapet__container, #bekjempere, #ansatte {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 4.8rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 3.6rem;
+}
+
+p, a, li, h4 {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+}
+
+h4 {
+  font-weight: 700;
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 10px;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #E9E8E8;
+  padding: 0 1rem;
+}
+
+nav {
+  background: #0B5D1E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.nav__container h2 {
+  color: white;
+}
+
+.nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.nav__links a:hover, .nav__links a:focus {
+  background-color: #DA9827;
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.ansatte__tekst {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.ansatte__tekst h4 {
+  font-size: 2.4rem;
+}
+
+.bilde img {
+  max-height: 350px;
+  widt: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#CTA {
+  background: #0B5D1E;
+  padding: 6rem 0 8rem;
+}
+
+.CTA__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.CTA__content h2 {
+  color: white;
+  text-align: center;
+}
+
+#sett {
+  background: #0B5D1E;
+  padding: 4rem 0;
+}
+
+.sett__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.sett__content p {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sett__content p, .sett__content img {
+  height: auto;
+  width: 200px;
+  margin: 0 4rem;
+  opacity: 0.35;
+}
+
+.sett__content img:nth-child(2) {
+  height: 60px;
+  width: auto;
+  margin-top: 2rem;
+}
+
+#tilbakemeldinger {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+#tilbakemeldinger h1 {
+  font-size: 4.8rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.beholder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.beholder img {
+  width: 100%;
+  height: auto;
+}
+
+.beholder span {
+  color: #DA9827;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.beholder p {
+  font-size: 3.6rem;
+  margin: 2rem 0 6rem;
+  line-height: 4.8rem;
+}
+
+#hero {
+  background-image: url("images/øgle.png");
+  background-repeat: no-repeat;
+  background-size: 1400px;
+  background-position-y: -60px;
+  background-position-x: 150px;
+  height: 50vh;
+}
+
+main a {
+  color: black;
+  text-decoration: none;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  font-weight: 700;
+  background: #DA9827;
+}
+
+main a:hover, main a:focuswhite {
+  background-color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#bekjempere {
+  margin: 8rem auto;
+}
+
+#bekjempere h2 {
+  margin: 0 0 4rem;
+}
+
+.container {
+  margin: 1rem 0 3rem;
+}
+
+.bilde, .dyr__tekst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 3rem 0;
+}
+
+.dyr__tekst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+}
+
+.dyr__tekst p, .dyr__tekst li {
+  padding: 0 2rem 0 0;
+}
+
+.dyr__tekst h3 {
+  padding: 0;
+  margin: 2.5rem 0 0;
+}
+
+.bilde {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.bilde img {
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#selskapet {
+  background: #0B5D1E;
+  padding: 2rem 0;
+}
+
+#selskapet h2, #selskapet p {
+  color: white;
+}
+
+#selskapet a {
+  margin: 2rem 0;
+}
+
+#selskapet p {
+  padding: 0 4rem 0 0;
+}
+
+.selskapet__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0 5rem;
+}
+
+.selskapet__left__col {
+  padding: 0 1rem;
+}
+
+.selskapet__left__col p:nth-child(3) {
+  margin: 0 0 4rem;
+}
+
+.selskapet__left__col h2 {
+  font-size: 3.6rem;
+}
+
+.selskapet__right__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1.5rem 0 0;
+}
+
+#bekjempere h2 {
+  text-align: center;
+}
+
+#ansatte {
+  margin: 6rem auto;
+}
+
+#ansatte h2 {
+  text-align: center;
+}
+
+#ansatte .container {
+  margin: 6rem 0;
+}
+
+.ansatte__tekst p {
+  padding: 0 3rem 0 0;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+.sett__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1040px;
+  margin: 0 auto;
+  width: 30px;
+  height: auto;
+  width: 30px;
+}
+
+.sett__content p, .sett__content img {
+  border: solid red;
+}
+/*# sourceMappingURL=footer.css.map */
