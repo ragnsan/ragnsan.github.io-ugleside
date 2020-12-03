@@ -65,7 +65,10 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1040px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1140px;
   margin: 0 auto;
 }
 
@@ -87,15 +90,16 @@ nav {
   text-decoration: none;
   color: white;
   font-weight: 700;
-  padding: 1rem 2rem;
+  margin: 0.85rem 0 0 1rem;
+  padding: 0.75rem 2rem;
   border-radius: 10px;
 }
 
 .nav__links a:hover, .nav__links a:focus {
   background-color: #DA9827;
-  color: black;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .ansatte__tekst {
@@ -136,6 +140,11 @@ nav {
 .CTA__content h2 {
   color: white;
   text-align: center;
+}
+
+.CTA__content a:hover, .CTA__content a:focus {
+  background: white;
+  color: #0B5D1E;
 }
 
 #sett {
@@ -238,10 +247,10 @@ main a {
   background: #DA9827;
 }
 
-main a:hover, main a:focuswhite {
+main a:hover, main a:focus {
   background-color: white;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 #bekjempere {
@@ -274,6 +283,24 @@ main a:hover, main a:focuswhite {
   margin: 3rem 0;
 }
 
+@-webkit-keyframes smooth {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes smooth {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .dyr__tekst {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,6 +313,8 @@ main a:hover, main a:focuswhite {
 
 .dyr__tekst__more {
   display: none;
+  -webkit-animation: smooth 0.3s ease-in;
+          animation: smooth 0.3s ease-in;
 }
 
 .dyr__tekst__read {
@@ -297,8 +326,8 @@ main a:hover, main a:focuswhite {
   font-size: 1.6rem;
   color: white;
   border-radius: 10px;
-  -webkit-animation-name: slide;
-          animation-name: slide;
+  -webkit-transition: height 0.3s ease-in;
+  transition: height 0.3s ease-in;
 }
 
 .dyr__tekst__read:hover {
@@ -419,6 +448,16 @@ main a:hover, main a:focuswhite {
 
 #ansatte h2 {
   text-align: center;
+}
+
+#ansatte h3 {
+  margin: 3rem 0 1rem;
+}
+
+#ansatte h4 {
+  font-weight: 400;
+  margin: 0 0 3rem;
+  font-style: italic;
 }
 
 #ansatte .container {

@@ -4,6 +4,7 @@ const sections = document.querySelectorAll("section");
 
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide");
+
 // const options = {
 //   root: null,
 //   threshold: 0,
