@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="app.js"></script>
+    <script src="intersection-observer.js" defer></script>
     <title>ØEgle</title>
   </head>
   <body>
@@ -39,9 +41,9 @@
           Om selskapet
           =====
       -->
-      <section id="selskapet">
+      <section class="selskapet">
         <div class="selskapet__container">
-          <div class="selskapet__left__col">
+          <div class="selskapet__left__col fade-in">
             <h2>Om vårt selskap</h2>
             <p>
               GLE er et firma som ikke bruker gift og har fokus på natr- og
@@ -55,7 +57,7 @@
             </p>
             <a href="index.html#ansatte">Les om våre ansatte</a>
           </div>
-          <div class="selskapet__right__col">
+          <div class="selskapet__right__col fade-in">
             <p>
               Høsten 2020 var det ikke bare Covid-19 som dominerte verdensbilde,
               men også nyheten om at det var gnagerår i Norge. Folk oppdaget i
@@ -83,9 +85,13 @@
         <!--uglen-->
         <div class="container">
           <div class="bilde bilde__left">
-            <img src="images/Bilde1.png" alt="Majestetisk ugle" />
+            <img
+              src="images/Bilde1.png"
+              class="fade-in left slide"
+              alt="Majestetisk ugle"
+            />
           </div>
-          <div class="dyr__tekst">
+          <div class="dyr__tekst dyr__tekst--hover">
             <h3>Uglen</h3>
             <p>
               Uglene er en særegen fugleart, som hovedsakelig lever av små
@@ -94,18 +100,26 @@
               dette som gjør de til den ideelle bekjemperen av mus!
             </p>
             <h4>Fordeler</h4>
-            <ul>
-              <li>Jobber alltid med fokus på substitusjonsprinsippet §3-2</li>
-              <li>Gode arbeidere</li>
-              <li>
-                Tar natteoppdrag, så du slipper å ta fri fra jobb for befaring
-              </li>
-              <li>
-                Både jordugle og haukugle er delvis dagaktive og tar
-                dagsbefaring
-              </li>
-              <li>Ingen Co2 utslipp ikke på reiseveien</li>
-            </ul>
+            <span class="dyr__tekst__dots">...</span>
+            <span class="dyr__tekst__more">
+              <ul>
+                <li>Jobber alltid med fokus på substitusjonsprinsippet §3-2</li>
+                <li>Gode arbeidere</li>
+
+                <li>
+                  Tar natteoppdrag, så du slipper å ta fri fra jobb for befaring
+                </li>
+
+                <li>
+                  Både jordugle og haukugle er delvis dagaktive og tar
+                  dagsbefaring
+                </li>
+                <li>Ingen Co2 utslipp ikke på reiseveien</li>
+              </ul>
+            </span>
+            <button class="dyr__tekst__read" type="button" onclick="read()">
+              Les mer
+            </button>
           </div>
         </div>
 
@@ -122,26 +136,37 @@
               å sikrer en optimal forståelse og vurdering av skadebildet. Den
               tid er forbi!
             </p>
-            <h4>Fordeler</h4>
-            <ul>
-              <li>
-                Spiser ikke bare skjeggkre, men også andre nattaktive leddyr som
-                møll og etterkopper
-              </li>
-              <li>Svært raske</li>
-              <li>Klatrer der du trenger de!</li>
-              <li>Jobber på natten, mens du sover</li>
-            </ul>
+            <span class="dyr__tekst__dots">...</span>
+            <span class="dyr__tekst__more">
+              <h4>Fordeler</h4>
+              <ul>
+                <li>
+                  Spiser ikke bare skjeggkre, men også andre nattaktive leddyr
+                  som møll og etterkopper
+                </li>
+                <li>Svært raske</li>
+                <li>Klatrer der du trenger de!</li>
+                <li>Jobber på natten, mens du sover</li>
+              </ul>
+            </span>
+            <button class="dyr__tekst__read" type="button" onclick="readTo()">
+              Les mer
+            </button>
           </div>
-          <div class="bilde">
-            <img src="images/Bilde2.jpg" alt="En vakker øgle" />
+          <div class="bilde bilde__right">
+            <img
+              class="fade-in right"
+              src="images/Bilde2.jpg"
+              alt="En vakker øgle"
+            />
           </div>
         </div>
 
         <!--Marihøna-->
         <div class="container">
-          <div class="bilde">
+          <div class="bilde bilde__left">
             <img
+              class="fade-in left"
               src="images/b925ae8dca65d00943fded85464ad117.jpg"
               alt="En grotesk marihøne"
             />
@@ -154,20 +179,26 @@
               forflytter seg etter tilgangen på smågnagere – og det er nettopp
               dette som gjør de til den ideelle bekjemperen av mus!
             </p>
-            <h4>Fordeler</h4>
-            <ul>
-              <li>Jobber alltid med fokus på substitusjonsprinsippet §3-2</li>
-              <li>Gode arbeidere</li>
-              <li>
-                Tar natteoppdrag, så du slipper å ta fri fra jobb for befaring
-              </li>
-              <li>
-                Både jordugle og haukugle er delvis dagaktive og tar
-                dagsbefaring
-              </li>
-              <li>Ingen Co2 utslipp ikke på reiseveien</li>
-              <li>God jakterfaring fra eggklekking</li>
-            </ul>
+            <span class="dyr__tekst__dots">...</span>
+            <span class="dyr__tekst__more">
+              <h4>Fordeler</h4>
+              <ul>
+                <li>Jobber alltid med fokus på substitusjonsprinsippet §3-2</li>
+                <li>Gode arbeidere</li>
+                <li>
+                  Tar natteoppdrag, så du slipper å ta fri fra jobb for befaring
+                </li>
+                <li>
+                  Både jordugle og haukugle er delvis dagaktive og tar
+                  dagsbefaring
+                </li>
+                <li>Ingen Co2 utslipp ikke på reiseveien</li>
+                <li>God jakterfaring fra eggklekking</li>
+              </ul>
+            </span>
+            <button class="dyr__tekst__read" type="button" onclick="readTre()">
+              Les mer
+            </button>
           </div>
         </div>
       </section>
@@ -187,9 +218,12 @@
       <section id="ansatte">
         <h2 class="">Våre Ansatte</h2>
         <div class="container">
-          <div class="bilde">
-            <img src="images/Monica_Hussopp_portrett_034_20180205.jpg" alt"Ikke
-            et bilde av Henrik">
+          <div class="bilde bilde__left">
+            <img
+              class="fade-in left"
+              src="images/Monica_Hussopp_portrett_034_20180205.jpg"
+              alt="Ikke et bilde av Henrik"
+            />
           </div>
           <div class="ansatte__tekst">
             <h3>Kjell Henrik</h3>
@@ -223,16 +257,23 @@
               selve ideeskaperen av firmaet. Med en brennende entusiasme for.
             </p>
           </div>
-          <div class="bilde">
-            <img src="images/Monica_Hussopp_portrett_034_20180205.jpg"
-            alt"Monica Aldal Utberg portrettbilde">
+          <div class="bilde bilde__right">
+            <img
+              class="fade-in right"
+              src="images/Monica_Hussopp_portrett_034_20180205.jpg"
+              alt="Monica Aldal Utberg portrettbilde"
+            />
           </div>
         </div>
 
         <!--Maren-->
         <div class="container">
-          <div class="bilde">
-            <img src="images/DSC06448.JPG" alt"En vakker ung dame">
+          <div class="bilde bilde__left">
+            <img
+              class="fade-in left slide-in"
+              src="images/DSC06448.JPG"
+              alt="En vakker ung dame"
+            />
           </div>
           <div class="ansatte__tekst">
             <h3>Maren Trones Christiansen</h3>
@@ -256,8 +297,9 @@
       <section id="sett">
         <div class="sett__content">
           <p>Som sett på</p>
-          <img src="images/fhi-white.png" alt="Hvit FHI logo" />
+          <img loading="lazy" src="images/fhi-white.png" alt="Hvit FHI logo" />
           <img
+            loading="lazy"
             src="images/helsedir-white.png"
             alt="Hvit Helsedirektoratet logo"
           />

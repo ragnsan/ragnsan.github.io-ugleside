@@ -2,11 +2,13 @@
 @import mixins
 @import typography
 @import universal
+@import animations
 @import nav
 @import layout
 @import components
 @import footer
 @import tilbakemeldinger
+
 
 #hero
     background-image: url("images/øgle.png")
@@ -54,6 +56,32 @@ main a
     align-items: flex-start
     margin: 0
 
+    &__more
+        display: none
+        
+
+    &__read
+        background: $primary
+        border: none
+        font-weight: 900
+        padding: 1rem 2rem
+        margin: 1rem 0
+        font-size: 1.6rem
+        color: white
+        border-radius: 10px
+        animation-name: slide
+
+        &:hover
+            background: $accent
+            transition: 0.3s ease-out
+            cursor: pointer
+
+    &__dots
+        font-size: 2.4rem;
+        font-weight: 700
+        margin: 1rem 0
+
+
     p, li
         padding: 0 2rem 0 0
 
@@ -63,14 +91,39 @@ main a
 
 .bilde  
     align-items: flex-start
+    
 
     img 
         width: 90%
         object-fit: cover
 
-        
+.left
+    transform: translateX(-5%)
 
-        
+.right
+    transform: translateX(5%)
+
+.left, .right
+    transition: opacity 0.4s ease-in, transform 0.2s ease-in
+    opacity: 0
+
+.left.appear, .right.appear
+    transform: translateX(0%)
+    opacity: 1
+
+
+
+// .fade-in
+//     border: solid red
+//     opacity: 0
+//     transition: opacity 0.3s ease-in
+
+
+//     &.appear
+//         opacity: 1
+
+
+
 
 #selskapet
     background: $primary

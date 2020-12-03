@@ -284,6 +284,36 @@ main a:hover, main a:focuswhite {
   margin: 0;
 }
 
+.dyr__tekst__more {
+  display: none;
+}
+
+.dyr__tekst__read {
+  background: #0B5D1E;
+  border: none;
+  font-weight: 900;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  color: white;
+  border-radius: 10px;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+}
+
+.dyr__tekst__read:hover {
+  background: #DA9827;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.dyr__tekst__dots {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
 .dyr__tekst p, .dyr__tekst li {
   padding: 0 2rem 0 0;
 }
@@ -303,6 +333,30 @@ main a:hover, main a:focuswhite {
   width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.left {
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+}
+
+.right {
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+}
+
+.left, .right {
+  -webkit-transition: opacity 0.4s ease-in, -webkit-transform 0.2s ease-in;
+  transition: opacity 0.4s ease-in, -webkit-transform 0.2s ease-in;
+  transition: opacity 0.4s ease-in, transform 0.2s ease-in;
+  transition: opacity 0.4s ease-in, transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  opacity: 0;
+}
+
+.left.appear, .right.appear {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
 }
 
 #selskapet {
